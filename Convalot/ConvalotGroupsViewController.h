@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @class DetailViewController;
+@class MHConvoreMessage;
 
 @interface ConvalotGroupsViewController : UITableViewController {
 }
 @property(nonatomic, retain) IBOutlet DetailViewController *detailViewController;
 @property(nonatomic, copy) NSArray *groups;
+
+- (void)newMessage:(MHConvoreMessage *)message;
 
 @end

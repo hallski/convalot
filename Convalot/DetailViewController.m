@@ -156,4 +156,11 @@
                                          }];
 }
 
+#pragma mark - Public API
+- (void)newMessage:(MHConvoreMessage *)message
+{
+    NSString *string = [self.outputTextView.text stringByAppendingFormat:@"%@: %@\n", message.user.name, message.message];
+    self.outputTextView.text = string;
+}
+
 @end

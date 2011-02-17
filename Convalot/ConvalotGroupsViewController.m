@@ -154,4 +154,22 @@
     [super dealloc];
 }
 
+#pragma mark -
+#pragma mark Public API
+- (void)newMessage:(MHConvoreMessage *)message
+{
+    // FIXME: Add isEqual to MHConvoreGroup
+    if (self.navigationController.topViewController != self) {
+        ConvalotTopicsViewController *controller = (ConvalotTopicsViewController *)self.navigationController.topViewController;
+        if ([message.groupId isEqualToString:controller.group.groupId]) {
+            [controller newMessage:message];
+        } else {
+            NSLog(@"New message but not on current group (%@ != %@): %@", message.groupId, controller.group.groupId, message.message);
+        }
+    } else {
+        NSLog(@"New message that should be highlighted on the group: %@", message.message);
+        // FIXME: Highlight new message in one of the groups
+    }
+}
+
 @end

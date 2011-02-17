@@ -183,4 +183,15 @@
      */
 }
 
+#pragma mark - Public API
+- (void)newMessage:(MHConvoreMessage *)message
+{
+    if ([message.topic.topicId isEqualToString:self.detailViewController.topic.topicId]) {
+        [self.detailViewController newMessage:message];
+    } else {
+        NSLog(@"New message that should be highlighted on topic: %@", message.message);
+        // FIXME: Highlight one of the topics
+    }
+}
+
 @end

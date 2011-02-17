@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@class MHConvoreMessage;
 @class MHConvoreTopic;
 
 @interface DetailViewController : UIViewController <UIPopoverControllerDelegate, UISplitViewControllerDelegate> {
@@ -18,4 +19,7 @@
 @property(nonatomic, retain) MHConvoreTopic *topic;
 
 - (IBAction)sendMessage:(id)sender;
+
+- (void)newMessage:(MHConvoreMessage *)message;
+
 @end

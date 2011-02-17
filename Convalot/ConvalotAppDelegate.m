@@ -21,6 +21,15 @@
 {
     [ConvalotClient sharedClient].listener = self;
     
+    
+    [[ConvalotClient sharedClient] verifyAccount:^ (MHConvoreUser *user, NSError *error) {
+        if (error == nil) {
+            [[ConvalotClient sharedClient] listen];
+        } else {
+            NSLog(@"Report error: %@", error);
+        }
+    }];
+    
     // Override point for customization after application launch.
     // Add the split view controller's view to the window and display.
     self.window.rootViewController = self.splitViewController;
@@ -74,6 +83,13 @@
     [_rootViewController release];
     [_detailViewController release];
     [super dealloc];
+}
+
+#pragma mark -
+#pragma mark MHConvoreClient Listener
+- (void)newMessage:(MHConvoreMessage *)message
+{
+    [self.rootViewController newMessage:message];
 }
 
 @end

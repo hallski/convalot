@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class MHConvoreGroup;
+@class MHConvoreMessage;
 @class DetailViewController;
 
 @interface ConvalotTopicsViewController : UITableViewController {
@@ -19,5 +20,7 @@
 @property(nonatomic, retain) DetailViewController *detailViewController;
 
 - (id)initWithStyle:(UITableViewStyle)style group:(MHConvoreGroup *)group;
+
+- (void)newMessage:(MHConvoreMessage *)message;
 
 @end
