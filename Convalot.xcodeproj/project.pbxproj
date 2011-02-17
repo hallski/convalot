@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		407A5566130D67B700AC33F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407A5565130D67B700AC33F4 /* UIKit.framework */; };
+		407A5568130D67B700AC33F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407A5567130D67B700AC33F4 /* Foundation.framework */; };
+		407A556A130D67B700AC33F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407A5569130D67B700AC33F4 /* CoreGraphics.framework */; };
+		407A5570130D67B700AC33F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 407A556E130D67B700AC33F4 /* InfoPlist.strings */; };
+		407A5573130D67B700AC33F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 407A5572130D67B700AC33F4 /* main.m */; };
+		407A5576130D67B700AC33F4 /* ConvalotAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 407A5575130D67B700AC33F4 /* ConvalotAppDelegate.m */; };
+		407A5579130D67B800AC33F4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 407A5577130D67B800AC33F4 /* MainWindow.xib */; };
+		407A557C130D67B800AC33F4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 407A557B130D67B800AC33F4 /* DetailViewController.m */; };
+		407A557F130D67B800AC33F4 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 407A557D130D67B800AC33F4 /* DetailView.xib */; };
+		407A5582130D67B800AC33F4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 407A5581130D67B800AC33F4 /* RootViewController.m */; };
+		407A5589130D67B800AC33F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407A5565130D67B700AC33F4 /* UIKit.framework */; };
+		407A558A130D67B800AC33F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407A5567130D67B700AC33F4 /* Foundation.framework */; };
+		407A558B130D67B800AC33F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407A5569130D67B700AC33F4 /* CoreGraphics.framework */; };
+		407A5593130D67B800AC33F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 407A5591130D67B800AC33F4 /* InfoPlist.strings */; };
+		407A5596130D67B800AC33F4 /* ConvalotTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 407A5595130D67B800AC33F4 /* ConvalotTests.h */; };
+		407A5598130D67B800AC33F4 /* ConvalotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 407A5597130D67B800AC33F4 /* ConvalotTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		407A558C130D67B800AC33F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 407A5558130D67B700AC33F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 407A5560130D67B700AC33F4;
+			remoteInfo = Convalot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		407A5561130D67B700AC33F4 /* Convalot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convalot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		407A5565130D67B700AC33F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		407A5567130D67B700AC33F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		407A5569130D67B700AC33F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		407A556D130D67B700AC33F4 /* Convalot-Info.plist */ = {isa = PBXFileReference; path = "Convalot-Info.plist"; sourceTree = "<group>"; };
+		407A556F130D67B700AC33F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		407A5571130D67B700AC33F4 /* Convalot-Prefix.pch */ = {isa = PBXFileReference; path = "Convalot-Prefix.pch"; sourceTree = "<group>"; };
+		407A5572130D67B700AC33F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		407A5574130D67B700AC33F4 /* ConvalotAppDelegate.h */ = {isa = PBXFileReference; path = ConvalotAppDelegate.h; sourceTree = "<group>"; };
+		407A5575130D67B700AC33F4 /* ConvalotAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConvalotAppDelegate.m; sourceTree = "<group>"; };
+		407A5578130D67B800AC33F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		407A557A130D67B800AC33F4 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		407A557B130D67B800AC33F4 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		407A557E130D67B800AC33F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailView.xib; sourceTree = "<group>"; };
+		407A5580130D67B800AC33F4 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		407A5581130D67B800AC33F4 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		407A5588130D67B800AC33F4 /* ConvalotTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConvalotTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		407A5590130D67B800AC33F4 /* ConvalotTests-Info.plist */ = {isa = PBXFileReference; path = "ConvalotTests-Info.plist"; sourceTree = "<group>"; };
+		407A5592130D67B800AC33F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		407A5594130D67B800AC33F4 /* ConvalotTests-Prefix.pch */ = {isa = PBXFileReference; path = "ConvalotTests-Prefix.pch"; sourceTree = "<group>"; };
+		407A5595130D67B800AC33F4 /* ConvalotTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConvalotTests.h; sourceTree = "<group>"; };
+		407A5597130D67B800AC33F4 /* ConvalotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConvalotTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		407A555E130D67B700AC33F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407A5566130D67B700AC33F4 /* UIKit.framework in Frameworks */,
+				407A5568130D67B700AC33F4 /* Foundation.framework in Frameworks */,
+				407A556A130D67B700AC33F4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		407A5584130D67B800AC33F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407A5589130D67B800AC33F4 /* UIKit.framework in Frameworks */,
+				407A558A130D67B800AC33F4 /* Foundation.framework in Frameworks */,
+				407A558B130D67B800AC33F4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		407A5556130D67B700AC33F4 = {
+			isa = PBXGroup;
+			children = (
+				407A556B130D67B700AC33F4 /* Convalot */,
+				407A558E130D67B800AC33F4 /* ConvalotTests */,
+				407A5564130D67B700AC33F4 /* Frameworks */,
+				407A5562130D67B700AC33F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		407A5562130D67B700AC33F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				407A5561130D67B700AC33F4 /* Convalot.app */,
+				407A5588130D67B800AC33F4 /* ConvalotTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		407A5564130D67B700AC33F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				407A5565130D67B700AC33F4 /* UIKit.framework */,
+				407A5567130D67B700AC33F4 /* Foundation.framework */,
+				407A5569130D67B700AC33F4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		407A556B130D67B700AC33F4 /* Convalot */ = {
+			isa = PBXGroup;
+			children = (
+				407A5574130D67B700AC33F4 /* ConvalotAppDelegate.h */,
+				407A5575130D67B700AC33F4 /* ConvalotAppDelegate.m */,
+				407A5577130D67B800AC33F4 /* MainWindow.xib */,
+				407A557A130D67B800AC33F4 /* DetailViewController.h */,
+				407A557B130D67B800AC33F4 /* DetailViewController.m */,
+				407A557D130D67B800AC33F4 /* DetailView.xib */,
+				407A5580130D67B800AC33F4 /* RootViewController.h */,
+				407A5581130D67B800AC33F4 /* RootViewController.m */,
+				407A556C130D67B700AC33F4 /* Supporting Files */,
+			);
+			path = Convalot;
+			sourceTree = "<group>";
+		};
+		407A556C130D67B700AC33F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				407A556D130D67B700AC33F4 /* Convalot-Info.plist */,
+				407A556E130D67B700AC33F4 /* InfoPlist.strings */,
+				407A5571130D67B700AC33F4 /* Convalot-Prefix.pch */,
+				407A5572130D67B700AC33F4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		407A558E130D67B800AC33F4 /* ConvalotTests */ = {
+			isa = PBXGroup;
+			children = (
+				407A5595130D67B800AC33F4 /* ConvalotTests.h */,
+				407A5597130D67B800AC33F4 /* ConvalotTests.m */,
+				407A558F130D67B800AC33F4 /* Supporting Files */,
+			);
+			path = ConvalotTests;
+			sourceTree = "<group>";
+		};
+		407A558F130D67B800AC33F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				407A5590130D67B800AC33F4 /* ConvalotTests-Info.plist */,
+				407A5591130D67B800AC33F4 /* InfoPlist.strings */,
+				407A5594130D67B800AC33F4 /* ConvalotTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		407A5560130D67B700AC33F4 /* Convalot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 407A559B130D67B800AC33F4 /* Build configuration list for PBXNativeTarget "Convalot" */;
+			buildPhases = (
+				407A555D130D67B700AC33F4 /* Sources */,
+				407A555E130D67B700AC33F4 /* Frameworks */,
+				407A555F130D67B700AC33F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Convalot;
+			productName = Convalot;
+			productReference = 407A5561130D67B700AC33F4 /* Convalot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		407A5587130D67B800AC33F4 /* ConvalotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 407A559E130D67B800AC33F4 /* Build configuration list for PBXNativeTarget "ConvalotTests" */;
+			buildPhases = (
+				407A5583130D67B800AC33F4 /* Sources */,
+				407A5584130D67B800AC33F4 /* Frameworks */,
+				407A5585130D67B800AC33F4 /* Resources */,
+				407A5586130D67B800AC33F4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				407A558D130D67B800AC33F4 /* PBXTargetDependency */,
+			);
+			name = ConvalotTests;
+			productName = ConvalotTests;
+			productReference = 407A5588130D67B800AC33F4 /* ConvalotTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		407A5558130D67B700AC33F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Mikael Hallendal";
+			};
+			buildConfigurationList = 407A555B130D67B700AC33F4 /* Build configuration list for PBXProject "Convalot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 407A5556130D67B700AC33F4;
+			productRefGroup = 407A5562130D67B700AC33F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				407A5560130D67B700AC33F4 /* Convalot */,
+				407A5587130D67B800AC33F4 /* ConvalotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		407A555F130D67B700AC33F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407A5570130D67B700AC33F4 /* InfoPlist.strings in Resources */,
+				407A5579130D67B800AC33F4 /* MainWindow.xib in Resources */,
+				407A557F130D67B800AC33F4 /* DetailView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		407A5585130D67B800AC33F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407A5593130D67B800AC33F4 /* InfoPlist.strings in Resources */,
+				407A5596130D67B800AC33F4 /* ConvalotTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		407A5586130D67B800AC33F4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		407A555D130D67B700AC33F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407A5573130D67B700AC33F4 /* main.m in Sources */,
+				407A5576130D67B700AC33F4 /* ConvalotAppDelegate.m in Sources */,
+				407A557C130D67B800AC33F4 /* DetailViewController.m in Sources */,
+				407A5582130D67B800AC33F4 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		407A5583130D67B800AC33F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407A5598130D67B800AC33F4 /* ConvalotTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		407A558D130D67B800AC33F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 407A5560130D67B700AC33F4 /* Convalot */;
+			targetProxy = 407A558C130D67B800AC33F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		407A556E130D67B700AC33F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				407A556F130D67B700AC33F4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		407A5577130D67B800AC33F4 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				407A5578130D67B800AC33F4 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		407A557D130D67B800AC33F4 /* DetailView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				407A557E130D67B800AC33F4 /* en */,
+			);
+			name = DetailView.xib;
+			sourceTree = "<group>";
+		};
+		407A5591130D67B800AC33F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				407A5592130D67B800AC33F4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		407A5599130D67B800AC33F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		407A559A130D67B800AC33F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		407A559C130D67B800AC33F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Convalot/Convalot-Prefix.pch";
+				INFOPLIST_FILE = "Convalot/Convalot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		407A559D130D67B800AC33F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Convalot/Convalot-Prefix.pch";
+				INFOPLIST_FILE = "Convalot/Convalot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		407A559F130D67B800AC33F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Convalot.app/Convalot";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ConvalotTests/ConvalotTests-Prefix.pch";
+				INFOPLIST_FILE = "ConvalotTests/ConvalotTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		407A55A0130D67B800AC33F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Convalot.app/Convalot";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ConvalotTests/ConvalotTests-Prefix.pch";
+				INFOPLIST_FILE = "ConvalotTests/ConvalotTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		407A555B130D67B700AC33F4 /* Build configuration list for PBXProject "Convalot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407A5599130D67B800AC33F4 /* Debug */,
+				407A559A130D67B800AC33F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		407A559B130D67B800AC33F4 /* Build configuration list for PBXNativeTarget "Convalot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407A559C130D67B800AC33F4 /* Debug */,
+				407A559D130D67B800AC33F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		407A559E130D67B800AC33F4 /* Build configuration list for PBXNativeTarget "ConvalotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407A559F130D67B800AC33F4 /* Debug */,
+				407A55A0130D67B800AC33F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 407A5558130D67B700AC33F4 /* Project object */;
+}

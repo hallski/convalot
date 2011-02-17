@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ConvalotTests' target in the 'ConvalotTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
