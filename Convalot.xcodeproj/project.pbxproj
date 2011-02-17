@@ -45,6 +45,11 @@
 		407A55E3130D688400AC33F4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407A55E2130D688400AC33F4 /* SystemConfiguration.framework */; };
 		407A55E5130D688A00AC33F4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407A55E4130D688A00AC33F4 /* MobileCoreServices.framework */; };
 		407A55E7130D688E00AC33F4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 407A55E6130D688E00AC33F4 /* libz.dylib */; };
+		40FB5A68130D886500BDFA0E /* MHConvoreClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FB5A64130D886500BDFA0E /* MHConvoreClient.m */; };
+		40FB5A69130D886500BDFA0E /* MHConvoreGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FB5A65130D886500BDFA0E /* MHConvoreGroup.m */; };
+		40FB5A6A130D886500BDFA0E /* MHConvoreMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FB5A66130D886500BDFA0E /* MHConvoreMessage.m */; };
+		40FB5A6B130D886500BDFA0E /* MHConvoreTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FB5A67130D886500BDFA0E /* MHConvoreTopic.m */; };
+		40FB5A6D130D887F00BDFA0E /* MHConvoreUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FB5A6C130D887F00BDFA0E /* MHConvoreUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +130,16 @@
 		407A55E2130D688400AC33F4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		407A55E4130D688A00AC33F4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		407A55E6130D688E00AC33F4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		40FB5A5E130D87EB00BDFA0E /* MHConvoreClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHConvoreClient.h; sourceTree = "<group>"; };
+		40FB5A5F130D87EB00BDFA0E /* MHConvoreGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHConvoreGroup.h; sourceTree = "<group>"; };
+		40FB5A60130D87EB00BDFA0E /* MHConvoreMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHConvoreMessage.h; sourceTree = "<group>"; };
+		40FB5A61130D87EB00BDFA0E /* MHConvoreTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHConvoreTopic.h; sourceTree = "<group>"; };
+		40FB5A62130D87EB00BDFA0E /* MHConvoreUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHConvoreUser.h; sourceTree = "<group>"; };
+		40FB5A64130D886500BDFA0E /* MHConvoreClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHConvoreClient.m; sourceTree = "<group>"; };
+		40FB5A65130D886500BDFA0E /* MHConvoreGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHConvoreGroup.m; sourceTree = "<group>"; };
+		40FB5A66130D886500BDFA0E /* MHConvoreMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHConvoreMessage.m; sourceTree = "<group>"; };
+		40FB5A67130D886500BDFA0E /* MHConvoreTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHConvoreTopic.m; sourceTree = "<group>"; };
+		40FB5A6C130D887F00BDFA0E /* MHConvoreUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHConvoreUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +254,7 @@
 		407A55A1130D67E500AC33F4 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				40FB5A5D130D87EB00BDFA0E /* MHConvore */,
 				407A55DC130D681D00AC33F4 /* Reachability */,
 				407A55A2130D67E500AC33F4 /* ASIHTTPRequest */,
 				407A55B5130D67E500AC33F4 /* JSON */,
@@ -306,6 +322,23 @@
 				407A55DA130D681100AC33F4 /* Reachability.m */,
 			);
 			name = Reachability;
+			sourceTree = "<group>";
+		};
+		40FB5A5D130D87EB00BDFA0E /* MHConvore */ = {
+			isa = PBXGroup;
+			children = (
+				40FB5A5E130D87EB00BDFA0E /* MHConvoreClient.h */,
+				40FB5A64130D886500BDFA0E /* MHConvoreClient.m */,
+				40FB5A5F130D87EB00BDFA0E /* MHConvoreGroup.h */,
+				40FB5A65130D886500BDFA0E /* MHConvoreGroup.m */,
+				40FB5A60130D87EB00BDFA0E /* MHConvoreMessage.h */,
+				40FB5A66130D886500BDFA0E /* MHConvoreMessage.m */,
+				40FB5A61130D87EB00BDFA0E /* MHConvoreTopic.h */,
+				40FB5A67130D886500BDFA0E /* MHConvoreTopic.m */,
+				40FB5A62130D87EB00BDFA0E /* MHConvoreUser.h */,
+				40FB5A6C130D887F00BDFA0E /* MHConvoreUser.m */,
+			);
+			path = MHConvore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,6 +471,11 @@
 				407A55D8130D67E500AC33F4 /* SBJsonWriter.m in Sources */,
 				407A55DB130D681100AC33F4 /* Reachability.m in Sources */,
 				407A55DF130D684C00AC33F4 /* ASIAuthenticationDialog.m in Sources */,
+				40FB5A68130D886500BDFA0E /* MHConvoreClient.m in Sources */,
+				40FB5A69130D886500BDFA0E /* MHConvoreGroup.m in Sources */,
+				40FB5A6A130D886500BDFA0E /* MHConvoreMessage.m in Sources */,
+				40FB5A6B130D886500BDFA0E /* MHConvoreTopic.m in Sources */,
+				40FB5A6D130D887F00BDFA0E /* MHConvoreUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +661,7 @@
 				407A559D130D67B800AC33F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		407A559E130D67B800AC33F4 /* Build configuration list for PBXNativeTarget "ConvalotTests" */ = {
 			isa = XCConfigurationList;
@@ -631,6 +670,7 @@
 				407A55A0130D67B800AC33F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

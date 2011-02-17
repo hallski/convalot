@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MHConvoreClient.h"
+
 @class RootViewController;
 
 @class DetailViewController;
 
-@interface ConvalotAppDelegate : NSObject <UIApplicationDelegate> {
+@interface ConvalotAppDelegate : NSObject <UIApplicationDelegate, MHConvoreClientListener> {
 
 }
 
