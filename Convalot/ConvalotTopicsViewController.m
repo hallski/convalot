@@ -50,7 +50,7 @@
 {
     [super viewDidLoad];
     
-    self.title = @"Topics";
+    self.title = self.group.name;
 
     [[ConvalotClient sharedClient] topicsInGroup:self.group.groupId block:^ (NSArray *topics, NSError *error) {
         if (error == nil) {
