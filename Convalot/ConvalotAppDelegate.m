@@ -7,22 +7,20 @@
 //
 
 #import "ConvalotAppDelegate.h"
-
-#import "RootViewController.h"
+#import "ConvalotClient.h"
+#import "ConvalotGroupsViewController.h"
 
 @implementation ConvalotAppDelegate
-
-
 @synthesize window=_window;
-
 @synthesize splitViewController=_splitViewController;
-
 @synthesize rootViewController=_rootViewController;
-
 @synthesize detailViewController=_detailViewController;
+@synthesize convoreClient=_convoreClient;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [ConvalotClient sharedClient].listener = self;
+    
     // Override point for customization after application launch.
     // Add the split view controller's view to the window and display.
     self.window.rootViewController = self.splitViewController;

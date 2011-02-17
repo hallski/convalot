@@ -104,9 +104,10 @@
 #pragma mark Request creation
 - (void)setupHTTPRequest:(ASIHTTPRequest *)request
 {
-    [request setUsername:self.username];
-    [request setPassword:self.password];
+   // [request setUsername:self.username];
+   // [request setPassword:self.password];
     [request setTimeOutSeconds:60];
+    [request setUseKeychainPersistence:YES];
 }
 
 - (NSURL *)urlForRequestWithPath:(NSString *)path

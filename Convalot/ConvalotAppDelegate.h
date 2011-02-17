@@ -10,20 +10,16 @@
 
 #import "MHConvoreClient.h"
 
-@class RootViewController;
+@class ConvalotGroupsViewController;
 
 @class DetailViewController;
 
 @interface ConvalotAppDelegate : NSObject <UIApplicationDelegate, MHConvoreClientListener> {
-
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-
-@property (nonatomic, retain) IBOutlet UISplitViewController *splitViewController;
-
-@property (nonatomic, retain) IBOutlet RootViewController *rootViewController;
-
-@property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
-
+@property(nonatomic, retain) IBOutlet UIWindow *window;
+@property(nonatomic, retain) IBOutlet UISplitViewController *splitViewController;
+@property(nonatomic, retain) IBOutlet ConvalotGroupsViewController *rootViewController;
+@property(nonatomic, retain) IBOutlet DetailViewController *detailViewController;
+@property(nonatomic, retain) MHConvoreClient *convoreClient;
 @end
