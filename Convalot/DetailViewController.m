@@ -7,8 +7,9 @@
 //
 
 #import "DetailViewController.h"
+#import "ConvalotGroupsViewController.h"
+#import "ConvalotClient.h"
 
-#import "RootViewController.h"
 
 @interface DetailViewController ()
 @property (nonatomic, retain) UIPopoverController *popoverController;
@@ -16,25 +17,22 @@
 @end
 
 @implementation DetailViewController
-
 @synthesize toolbar=_toolbar;
-
-@synthesize detailItem=_detailItem;
-
-@synthesize detailDescriptionLabel=_detailDescriptionLabel;
-
+@synthesize outputTextView = _outputTextView;
+@synthesize inputField = _inputField;
 @synthesize popoverController=_myPopoverController;
+@synthesize topic = _topic;
 
 #pragma mark - Managing the detail item
 
 /*
  When setting the detail item, update the view and dismiss the popover controller if it's showing.
  */
-- (void)setDetailItem:(id)newDetailItem
+- (void)setTopic:(MHConvoreTopic *)topic
 {
-    if (_detailItem != newDetailItem) {
-        [_detailItem release];
-        _detailItem = [newDetailItem retain];
+    if (_topic != topic) {
+        [_topic release];
+        _topic = [topic retain];
         
         // Update the view.
         [self configureView];
@@ -48,8 +46,17 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
-    self.detailDescriptionLabel.text = [self.detailItem description];
+    [[ConvalotClient sharedClient] messagesInTopic:self.topic.topicId block:^ (NSArray *messages, NSError *error) {
+        if (error == nil) {
+            NSMutableString *string = [NSMutableString string];
+            
+            for (MHConvoreMessage *message in messages) {
+                [string appendFormat:@"%@: %@\n", message.user.name, message.message];
+            }
+            
+            self.outputTextView.text = string;
+        }
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -108,6 +115,8 @@
 
 - (void)viewDidUnload
 {
+    [self setInputField:nil];
+    [self setOutputTextView:nil];
 	[super viewDidUnload];
 
 	// Release any retained subviews of the main view.
@@ -129,9 +138,22 @@
 {
     [_myPopoverController release];
     [_toolbar release];
-    [_detailItem release];
-    [_detailDescriptionLabel release];
+    [_outputTextView release];
+    [_inputField release];
+    [_topic release];
+
     [super dealloc];
+}
+
+- (IBAction)sendMessage:(id)sender 
+{
+    [[ConvalotClient sharedClient] postMessage:self.inputField.text 
+                                       inTopic:self.topic.topicId
+                                         block:^ (MHConvoreMessage *message, NSError *error) {
+                                             if (error) {
+                                                 NSLog(@"Report error: %@", error);
+                                             }
+                                         }];
 }
 
 @end

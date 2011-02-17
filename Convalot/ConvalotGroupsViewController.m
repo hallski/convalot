@@ -120,6 +120,8 @@
 {
     ConvalotTopicsViewController *viewController = [[[ConvalotTopicsViewController alloc] initWithStyle:UITableViewStylePlain group:[self.groups objectAtIndex:indexPath.row]] autorelease];
     
+    viewController.detailViewController = self.detailViewController;
+    
     [self.navigationController pushViewController:viewController animated:YES];
         // Navigation logic may go here -- for example, create and push another view controller.
     /*

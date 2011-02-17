@@ -8,9 +8,11 @@
 
 #import "ConvalotTopicsViewController.h"
 #import "ConvalotClient.h"
+#import "DetailViewController.h"
 
 
 @implementation ConvalotTopicsViewController
+@synthesize detailViewController;
 @synthesize group = _group;
 @synthesize topics = _topics;
 
@@ -169,6 +171,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    self.detailViewController.topic = [self.topics objectAtIndex:indexPath.row];
+    
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];

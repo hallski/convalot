@@ -8,15 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class MHConvoreTopic;
+
 @interface DetailViewController : UIViewController <UIPopoverControllerDelegate, UISplitViewControllerDelegate> {
-
 }
+@property(nonatomic, retain) IBOutlet UIToolbar *toolbar;
+@property(nonatomic, retain) IBOutlet UITextView *outputTextView;
+@property(nonatomic, retain) IBOutlet UITextField *inputField;
+@property(nonatomic, retain) MHConvoreTopic *topic;
 
-
-@property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
-
-@property (nonatomic, retain) id detailItem;
-
-@property (nonatomic, retain) IBOutlet UILabel *detailDescriptionLabel;
-
+- (IBAction)sendMessage:(id)sender;
 @end

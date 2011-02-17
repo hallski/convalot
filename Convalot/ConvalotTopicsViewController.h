@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @class MHConvoreGroup;
+@class DetailViewController;
 
 @interface ConvalotTopicsViewController : UITableViewController {
     
 }
 @property(nonatomic, retain) MHConvoreGroup *group;
 @property(nonatomic, copy) NSArray *topics;
+@property(nonatomic, retain) DetailViewController *detailViewController;
 
 - (id)initWithStyle:(UITableViewStyle)style group:(MHConvoreGroup *)group;
 
